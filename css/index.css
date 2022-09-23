@@ -1,0 +1,53 @@
+
+table{
+    width: 100%;
+}
+
+tbody{
+    width: 100%;
+}
+/* va da proprietatile la prima(tr:nrt-child(odd)) sau la al doilea rand */
+tr/:nth-child(even){
+    background-color:burlywood ;
+    color: red;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: "b b"
+                        "t t"
+                        "c c"
+                        "p p";
+
+    width: 800px;
+    grid-gap:15px;
+}
+.brand{
+    width: 50%;
+    grid-area: b;
+}
+.tip{
+    width: 50%;
+    grid-area: t;
+}
+.continutSet{
+    width: 50%;
+    grid-area:c
+}
+
+.pret{
+    width: 50%;
+    grid-area:p
+}
+
+input{
+    display: block;
+    width: 67%;
+}
+
+
+
+
+
